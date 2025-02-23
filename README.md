@@ -1,80 +1,35 @@
 
 
-📂 Folder Structure
-
 backend_framework/ 
-
-"webserver_application/ "
-"|                                                                                  "
-"│── server.js                # Main server file (imports routes and DB connection) "
-"│── models/ "
-"│   └── FootballData.js      # Mongoose schema & model "
-"│── routes/ "
-"│   └── footballRoutes.js    # API routes for CRUD operations "
-"│── config/ "
-"│   └── db.js                # MongoDB connection setup "
-"│── uploads/ "
-"│   └── (CSV files stored here) "
-"│── .env                     # Environment variables  "
+    
+    "api_testing_framework/"
+    "│                                                     "
+    "├── get_calls.py            # File for all GET calls  "
+    "├── post_calls.py           # File for all POST calls "
+    "├── headers.py              # File to manage and store headers "
+    "├── test_runner.py          # Main script to execute the tests "
+    "├── utils.py                # Utility functions (e.g., report generation) "
+    "├── requirements.txt        # Required Python packages                    "
+    "└── reports/ "
+    " └── api_test_report.html # HTML reports folder "
 
 
-📌 Step 1: Install Prerequisites
-Make sure you have the following installed:
+Requirements
+Add the required dependencies to requirements.txt:
+Install dependencies:
 
-"Node.js (Download from nodejs.org)"
-"MongoDB (Install from mongodb.com)"
-"Postman (for testing API, optional)"
+    "pip install -r requirements.txt"
+
+Run the Tests
+Run the main test script:
+
+    "python test_runner.py"
 
 
-📌 Step 2: Clone or Set Up the Project
+HTML Report Output
+The HTML report will be saved in the reports/ folder with details like:
 
-📌 Step 3: Initialize the Node.js Project
-
-Install Dependencies
-
-"npm init -y"
-"npm install express mongoose multer csv-parser cors dotenv body-parser"
-
-📌 Step 4: Install Required Dependencies
-"npm install express mongoose dotenv cors body-parser multer csv-parser"
-
-📌 Step 5: Setup MongoDB
-"mongodb+srv://yourusername:yourpassword@cluster0.mongodb.net/footballDB?retryWrites=true&w=majority"
-
-📌 Step 6: Run the Application
-"node server.js"
-
-📌 Step 7: Test API Endpoints
-
-Use Postman or cURL to test:
-
-"# Add a new team"
-"curl -X POST http://localhost:5000/api/football/add -H "Content-Type: application/json" -d '{"
-"    "team": "Liverpool","
-"    "gamesPlayed": 38,"
-"    "win": 25,"
-"    "draw": 10,"
-"    "loss": 3,"
-"    "goalsFor": 75,"
-"    "goalsAgainst": 30,"
-"    "points": 85,"
-"    "year": 2023"
-"}'"
-""
-"# Update a team"
-"curl -X POST http://localhost:5000/api/football/update/Liverpool -H "Content-Type: application/json" -d '{"
-"    "win": 26"
-"}'"
-""
-"# Delete a team"
-"curl -X POST http://localhost:5000/api/football/delete/Liverpool"
-""
-"# Get stats for a year"
-"curl -X GET http://localhost:5000/api/football/stats/2023"
-""
-"# Get top teams with wins > 20"
-"curl -X GET http://localhost:5000/api/football/topTeams/20"
-""
-"# Get teams with high average goals in a year"
-"curl -X GET http://localhost:5000/api/football/averageGoals/2023"
-
+- API Name
+- API Status (PASS/FAIL)
+- API Code
+- Data Response
