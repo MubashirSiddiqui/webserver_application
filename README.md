@@ -1,14 +1,10 @@
 
-<<<<<<< HEAD
+📂 Folder Structure
+
 ````
 webserver_application/
 |
-=======
 
-backend_framework/ 
-````    
-backend/
->>>>>>> eae77a2d5204f9f97dd6f40360fd0a61b7ae08a8
 │── server.js                # Main server file (imports routes and DB connection)
 │── models/
 │   └── FootballData.js      # Mongoose schema & model
@@ -57,7 +53,7 @@ node server.js
 
 Use Postman or cURL to test:
 ````
-# Add a new team
+ Add a new team
 curl -X POST http://localhost:5000/api/football/add -H "Content-Type: application/json" -d '{
     "team": "Liverpool",
     "gamesPlayed": 38,
@@ -70,20 +66,20 @@ curl -X POST http://localhost:5000/api/football/add -H "Content-Type: applicatio
     "year": 2023
 }'
 
-# Update a team
+ Update a team
 curl -X POST http://localhost:5000/api/football/update/Liverpool -H "Content-Type: application/json" -d '{
     "win": 26
 }'
 
-# Delete a team
+ Delete a team
 curl -X POST http://localhost:5000/api/football/delete/Liverpool
 
-# Get stats for a year
+ Get stats for a year
 curl -X GET http://localhost:5000/api/football/stats/2023
 
-# Get top teams with wins > 20
+ Get top teams with wins > 20
 curl -X GET http://localhost:5000/api/football/topTeams/20
 
-# Get teams with high average goals in a year
+ Get teams with high average goals in a year
 curl -X GET http://localhost:5000/api/football/averageGoals/2023
 ````
