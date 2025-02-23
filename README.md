@@ -5,6 +5,7 @@
 backend_framework/ 
 
 "webserver_application/ "
+"|                                                                                  "
 "│── server.js                # Main server file (imports routes and DB connection) "
 "│── models/ "
 "│   └── FootballData.js      # Mongoose schema & model "
