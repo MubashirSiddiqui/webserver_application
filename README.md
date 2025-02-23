@@ -1,16 +1,8 @@
+
+
 📂 Folder Structure
 
-
-  "api_testing_framework/"
-    "│                                                     "
-    "├── get_calls.py            # File for all GET calls  "
-    "├── post_calls.py           # File for all POST calls "
-    "├── headers.py              # File to manage and store headers "
-    "├── test_runner.py          # Main script to execute the tests "
-    "├── utils.py                # Utility functions (e.g., report generation) "
-    "├── requirements.txt        # Required Python packages                    "
-    "└── reports/ "
-    " └── api_test_report.html # HTML reports folder "
+backend_framework/ 
 
 "webserver_application/ "
 "│── server.js                # Main server file (imports routes and DB connection) "
