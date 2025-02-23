@@ -2,17 +2,18 @@
 
 backend_framework/ 
     
-  backend/"
-"│── server.js                # Main server file (imports routes and DB connection)"
-"│── models/"
-"│   └── FootballData.js      # Mongoose schema & model"
-"│── routes/"
-"│   └── footballRoutes.js    # API routes for CRUD operations"
-"│── config/"
-"│   └── db.js                # MongoDB connection setup"
-"│── uploads/"
-"│   └── (CSV files stored here)"
-"│── .env                     # Environment variables"
+backend/
+│── server.js                # Main server file (imports routes and DB connection)
+│── models/
+│   └── FootballData.js      # Mongoose schema & model
+│── routes/
+│   └── footballRoutes.js    # API routes for CRUD operations
+│── config/
+│   └── db.js                # MongoDB connection setup
+│── uploads/
+│   └── (CSV files stored here)
+│── .env                     # Environment variables
+
 
 
 Requirements
