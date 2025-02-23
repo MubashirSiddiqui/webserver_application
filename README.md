@@ -1,8 +1,14 @@
-📂 Folder Structure
 
+<<<<<<< HEAD
 ````
 webserver_application/
 |
+=======
+
+backend_framework/ 
+````    
+backend/
+>>>>>>> eae77a2d5204f9f97dd6f40360fd0a61b7ae08a8
 │── server.js                # Main server file (imports routes and DB connection)
 │── models/
 │   └── FootballData.js      # Mongoose schema & model
@@ -13,6 +19,7 @@ webserver_application/
 │── uploads/
 │   └── (CSV files stored here)
 │── .env                     # Environment variables
+<<<<<<< HEAD
 ````
 
 📌 Step 1: Install Prerequisites
