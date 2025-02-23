@@ -12,17 +12,17 @@
     "└── reports/ "
     " └── api_test_report.html # HTML reports folder "
 
-backend/"
-"│── server.js                # Main server file (imports routes and DB connection)"
-"│── models/"
-"│   └── FootballData.js      # Mongoose schema & model"
-"│── routes/"
-"│   └── footballRoutes.js    # API routes for CRUD operations"
-"│── config/"
-"│   └── db.js                # MongoDB connection setup"
-"│── uploads/"
-"│   └── (CSV files stored here)"
-"│── .env                     # Environment variables"
+"webserver_application/ "
+"│── server.js                # Main server file (imports routes and DB connection) "
+"│── models/ "
+"│   └── FootballData.js      # Mongoose schema & model "
+"│── routes/ "
+"│   └── footballRoutes.js    # API routes for CRUD operations "
+"│── config/ "
+"│   └── db.js                # MongoDB connection setup "
+"│── uploads/ "
+"│   └── (CSV files stored here) "
+"│── .env                     # Environment variables  "
 
 
 📌 Step 1: Install Prerequisites
