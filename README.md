@@ -2,16 +2,17 @@
 
 backend_framework/ 
     
-    "api_testing_framework/"
-    "│                                                     "
-    "├── get_calls.py            # File for all GET calls  "
-    "├── post_calls.py           # File for all POST calls "
-    "├── headers.py              # File to manage and store headers "
-    "├── test_runner.py          # Main script to execute the tests "
-    "├── utils.py                # Utility functions (e.g., report generation) "
-    "├── requirements.txt        # Required Python packages                    "
-    "└── reports/ "
-    " └── api_test_report.html # HTML reports folder "
+  backend/"
+"│── server.js                # Main server file (imports routes and DB connection)"
+"│── models/"
+"│   └── FootballData.js      # Mongoose schema & model"
+"│── routes/"
+"│   └── footballRoutes.js    # API routes for CRUD operations"
+"│── config/"
+"│   └── db.js                # MongoDB connection setup"
+"│── uploads/"
+"│   └── (CSV files stored here)"
+"│── .env                     # Environment variables"
 
 
 Requirements
